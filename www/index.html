@@ -231,7 +231,12 @@
       }else{
            document.body.style.backgroundColor = 'rgb(46, 240, 110)';
       }
-      
+ let m = '<b>分</b>';
+ 
+  let text1 = document.getElementById('text1');
+  text1.innerHTML = m; // innerHTMLでhtmlを追加
+   $("#text1").css("font-size","x-large");
+  
     } 
 
   </script>
@@ -252,5 +257,9 @@
 
     <input type="number" id="minute" value=0 >
     <input type="number" id="second" value=15 >
+
+    <div id="text1"></p>
+    <div id="text2"></p>
+
 </body>
 </html>
