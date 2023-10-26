@@ -38,6 +38,11 @@
         $('#btnC').click(function(e) {
             btnCClick(e);
         });
+
+         $('#btnD').click(function(e) {
+            btnCClick(e);
+        });
+
         init();
     });
     
@@ -218,11 +223,19 @@
       $("#btnC").css("font-size","x-large");
       //btnCの色の変更
       $("#btnC").css("background-color","pink");
+
+      if(rest <= 5){
+          document.body.style.backgroundColor = 'lightblue';
+      }else{
+           document.body.style.backgroundColor = 'rgb(46, 240, 110)';
+      }
+      
     } 
 
   </script>
 </head>
 <body>
+
     <canvas id="mycanvas" width="200" height="200">Test</canvas>
 
     <div id="minuteStr">〇</div>
