@@ -40,7 +40,7 @@
         });
 
          $('#btnD').click(function(e) {
-            btnCClick(e);
+            btnDClick(e);
         });
 
         init();
@@ -164,6 +164,7 @@
         $('#btnA').prop('disabled', false);
         $('#btnB').prop('disabled', false);
         $('#btnC').prop('disabled', false);
+        $('#btnD').prop('disabled', false);
     }
 
     // Alarmの処理
@@ -203,6 +204,16 @@
         $("#time").html("経過時間： 0");
         $("#remain").html("残り時間： " + period);
     }
+
+ // ButtonDがクリックされた時の処理
+    function btnDClick(e){
+        alarm();
+        active = false;
+        period = 180;
+        $("#time").html("経過時間： 0");
+        $("#remain").html("残り時間： " + period);
+
+    }
     
  
     // 繰り返し実行する処理
@@ -236,7 +247,6 @@
   let text1 = document.getElementById('text1');
   text1.innerHTML = m; // innerHTMLでhtmlを追加
    $("#text1").css("font-size","x-large");
-  
     } 
 
   </script>
@@ -253,7 +263,7 @@
     <button id="btnA">Start</button>  
     <button id="btnB">Stop</button>  
     <button id="btnC">Set</button>  
-    <button id="btnD">Set</button> 
+    <button id="btnD">3分タイマー</button> 
 
     <input type="number" id="minute" value=0 >
     <input type="number" id="second" value=15 >

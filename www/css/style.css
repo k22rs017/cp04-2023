@@ -77,7 +77,8 @@
     
     #btnD{
         font-size: 20;
-         position:absolute; top:500px; left:70%; width:28%; height:60px; 
+         position:absolute; top:500px; left:40%; width:56%; height:60px; 
+         background-color: orange;
     }
 
     #text1{
