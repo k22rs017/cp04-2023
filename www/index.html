@@ -242,21 +242,21 @@
       }else{
            document.body.style.backgroundColor = 'rgb(46, 240, 110)';
       }
- let m = '<b>分</b>';
- 
-  let text1 = document.getElementById('text1');
-  text1.innerHTML = m; // innerHTMLでhtmlを追加
-   $("#text1").css("font-size","x-large");
-    } 
+       var msg = "Hello, JavaScript!";
+          msg += "<br>";
+          msg += "This is Monaca.";
+          $("#canvas").html(msg);
+    
 
+    } 
   </script>
 </head>
 <body>
 
     <canvas id="mycanvas" width="200" height="200">Test</canvas>
 
-    <div id="minuteStr">〇</div>
-    <div id="secondStr">〇</div>
+    <div id="minuteStr">分</div>
+    <div id="secondStr">秒</div>
 
     <div id="remain">Remaining time</div>
     <div id="time">Time</div>
@@ -268,8 +268,6 @@
     <input type="number" id="minute" value=0 >
     <input type="number" id="second" value=15 >
 
-    <div id="text1"></p>
-    <div id="text2"></p>
 
 </body>
 </html>
